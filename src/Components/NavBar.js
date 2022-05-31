@@ -14,22 +14,15 @@ function NavBar(){
         delay: 1100,
         config: config.molasses,
       })
-
-    function activeLink(e){
-        const listItem = e.target.parentNode;
-
-        listItem.classList.toggle('navBarListItemActive')
-    }
-
     return(
-        <nav className='navBar'>
+        <nav className='navBar' id='inicio'>
             <animated.div className='navBarContainer' style={props}>
                 <h1 className='navBarTitle'>JOSUÉ<br/>BRAVO</h1>
 
                 <ul className='navBarList'>
-                    <li className='navBarListItem'><a href='#trabajos' className='navBarListButton' onClick={activeLink}>TRABAJOS</a></li>
-                    <li className='navBarListItem'><a href='#trabajos' className='navBarListButton' onClick={activeLink}>SOBRE MÍ</a></li>
-                    <li className='navBarListItem'><a href='#trabajos' className='navBarListButton' onClick={activeLink}>CONTACTO</a></li>
+                    <li className='navBarListItem'><a href='#trabajos' className='navBarListButton'>TRABAJOS</a></li>
+                    <li className='navBarListItem'><a href='#about' className='navBarListButton'>SOBRE MÍ</a></li>
+                    <li className='navBarListItem'><a href='#contacto' className='navBarListButton'>CONTACTO</a></li>
                 </ul>
             </animated.div>
         </nav>

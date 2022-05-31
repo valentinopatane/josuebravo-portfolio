@@ -18,7 +18,7 @@ const Box = ({position, color, args})=>{
 function Figures(){
 
     return(
-        <Canvas shadowMap colorManagement camera={{position: [-5, 2,10], fov:60}}>
+        <Canvas camera={{position: [-5, 2,10], fov:60}}>
             <ambientLight intensity={.4}/>
             <directionalLight
                 castShadow
@@ -43,8 +43,8 @@ function Figures(){
             </group>
 
             <Box position={[2,1,0]} color='#201992' args={[2,2,2]}/>
-            <Box position={[-2,4.5,-5]} color='#F4F6F6' args={[1,1,1]}/>
-            <Box position={[-2,-2.5,-2]} color='#333333'args={[0.7,0.7,0.7]}/>
+            <Box position={[-2,4.5,-5]} color='#F4F6F6' args={[1.5,1.5,1.5]}/>
+            <Box position={[-2,-2.5,-2]} color='#333333'args={[1,1,1]}/>
         </Canvas>
     )
 }
