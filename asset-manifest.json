@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/josuebravo-portfolio/static/css/main.5a6848ff.css",
+    "main.js": "/josuebravo-portfolio/static/js/main.eb52224b.js",
+    "index.html": "/josuebravo-portfolio/index.html",
+    "main.5a6848ff.css.map": "/josuebravo-portfolio/static/css/main.5a6848ff.css.map",
+    "main.eb52224b.js.map": "/josuebravo-portfolio/static/js/main.eb52224b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a6848ff.css",
+    "static/js/main.eb52224b.js"
+  ]
+}
