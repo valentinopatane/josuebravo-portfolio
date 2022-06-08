@@ -31,6 +31,7 @@
     align-items: center;
     justify-content: space-evenly;
     list-style: none;
+    text-transform: uppercase;
 }
 .navBarListItem{
     font-style: normal;
@@ -43,6 +44,7 @@
     align-items: center;
     justify-content: center;
     height: 60%;
+    text-transform: uppercase;
 }
 .navBarListButton{
     text-decoration: none;
@@ -50,4 +52,57 @@
 }
 .navBarListButton:hover{
     color: #4c489c;
+}
+.navMenu{
+    display: none;
+}
+.dissapear{
+    display: none;
+}
+@media (max-width:768px){
+    .navMenu{
+        display: flex;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        z-index: 2;
+    }
+    .navBarContainer{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 200;
+        overflow: hidden;
+    }
+    .navBarTitle{
+        width: 75%;
+        margin-left: 5%;
+        text-align: left;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .navBarTitle h1{
+        margin-left: 20px;
+    }
+    .navBarList{
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #fff;
+        height: 600px;
+        border-bottom: 1px solid #b8b8b8;
+        z-index: 100;
+    }
+    .barActive{
+        transform: translateX(0%);
+        transition: transform 0.5s ease-out;
+    }
+    .overflow{
+        overflow: visible;
+    }
 }

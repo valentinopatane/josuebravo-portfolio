@@ -21,18 +21,19 @@ main{
     width: 100%;
     height: 90vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .firstSectionContainer{
-    width: 99vw;
-    height: 87vh;
-    padding-left: 15%;
-    padding-right: 15%;
+    width: 85%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
 }
+.firstSectionButtons img{
+    display: none;
+}
 .firstSectionInfo{
-    width: 40vw;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -57,7 +58,7 @@ main{
     margin-bottom: 98px;
 }
 .firstSectionButtons{
-    width: 100%;
+    width: 60%;
     height: max-content;
     display: flex;
     justify-content: space-between;
@@ -96,17 +97,17 @@ main{
     transition: transform 0.3s ease-in-out;
 }
 .firstSectionFigures{
-    width: 60vw;
+    width: 60%;
     height: 100%;
     position: relative;
 }
 .firstSectionSocials{
     position: absolute;
     bottom: 100px;
-    right: 80px;
+    right: 0px;
     z-index: 5;
     width: max-content;
-    height: 170px;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -125,13 +126,14 @@ main{
 .secondSection{
     display: flex;
     flex-direction: column;
-    width: 99.1vw;
-    height: 100vh;
+    width: 100%;
+    height: 101vh;
     background-color: #200392;
+    position: relative;
 }
 .secondSection h3{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 70px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -145,7 +147,6 @@ main{
     align-items: center;
     width:100%;
     height: 80%;
-    position: relative;
     overflow: hidden;
 }
 
@@ -161,21 +162,21 @@ main{
     transition: opacity ease-in-out 0.6s;
 }
 .slideImage{
-    width: 450px;
+    width: 50%;
     height: 100%;
     margin-bottom: 50px;
+    border-radius: 5%;
 
 }
 .slide img {
-    border-radius: 5%;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-color: rebeccapurple;
+    border-radius: 5%;
 }
 .slideInfo{
-    width: 500px;
-    height: 400px;
+    width: 50%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.25);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -213,20 +214,19 @@ main{
 }
 .container-dots {
   position: absolute;
-  bottom: 10px;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
 }
 .dot {
     cursor: pointer;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  border: 1px solid #646464b6;
-  margin: 0 5px;
-  background: #0000003f;
-  transition: all 0.5s;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background: #0000003f;
+    transition: all 0.5s;
 }
 .dot:hover{
     transition: all 0.5s;
@@ -259,11 +259,17 @@ main{
     justify-content: center;
 }
 .thirdSectionContainerImg div{
-    width: 60%;
-    height: 50%;
-    background-color: rgb(226, 226, 226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
 }
-
+.thirdSectionContainerImg img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
 .thirdSectionContainerInfo{
     width: 45%;
 }
@@ -287,7 +293,7 @@ main{
 
 /* --------------------------------FOURTH SECTION - CONTACT-------------------------------- */
 .fourthSection{
-    width: 99.1vw;
+    width: 100%;
     height: 80vh;
 }
 .fourthSectionSt{
@@ -309,12 +315,24 @@ main{
     color: #F4F6F6;
     margin-bottom: 10px;
 }
+.fourthSectionStTitle{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.emoji{
+    font-size: 28px;
+
+    top: -20px;
+}
 .fourthSectionSt p{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 24px;
+    line-height: 28px;
     color: #F4F6F6;
     margin-bottom: 15px;
 }
@@ -386,4 +404,234 @@ main{
     font-weight: 500;
     font-size: 18px;
     line-height: 78px;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media(max-width: 1024px){
+/* --------------------------------FIRST SECTION-FIRST SCREEN-------------------------------- */
+    .firstSectionContainer{
+        align-items: center;
+    }
+    .firstSectionButtons{
+        width: 100%;
+    }
+    .firstSectionFigures{
+        width: 90%;
+    }
+    .firstSectionFigures{
+        width: 50%;
+        height: 80%;
+    }
+    .firstSectionSocials{
+        bottom: 0;
+    }
+    /* --------------------------------SECOND SECTION - CARDS-------------------------------- */
+    .slide{
+        width: 80%;
+        height: 70%;
+    }
+    .slideInfo{
+        height: 60%;
+    }
+    
+/* --------------------------------THIRD SECTION - ABOUT ME-------------------------------- */
+    .thirdSectionContainerInfo h3{
+        margin-bottom: 5px;
+    }
+    .thirdSectionContainerInfo p{
+        margin-bottom: 10px;
+    }
+/* --------------------------------FOURTH SECTION - CONTACT-------------------------------- */
+
+    .socialsBottomContainer{
+        width: 60%;
+    }
+    .num{
+        width: 100%;
+    }
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 768px){
+    /* --------------------------------FIRST SECTION-FIRST SCREEN-------------------------------- */
+    .firstSection{
+        height: max-content;
+        width: 100%;
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
+    .firstSectionContainer{
+        width: 80%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .firstSectionFigures{
+        display: none;
+    }
+    .firstSectionInfo{
+        width: 100%;
+        height: 100%;
+    }
+    .firstSectionInfo h1{
+        margin: 55px 0px 2px 0px ;
+    }
+    .firstSectionInfo h2{
+        margin-bottom: 20px;
+    }
+    .firstSectionButtons{
+        width: 100%;
+        height: 90%;
+        margin-top: 0px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .firstSectionButtons img{
+        width: 60%;
+    }
+    .firstSectionInfoButton{
+        width: 100%;
+        height: 60px;
+        margin-right: 0;
+        margin-top: 10px;
+
+    }
+/* --------------------------------SECOND SECTION - CARDS-------------------------------- */
+    .secondSection{
+        width: 100%;
+        position: relative;
+    }
+    .containerSlider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: 80%;
+
+    }
+    .slide{
+        width: 100%;
+        height: 80%;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .slide img {
+        width: 100%;
+        height: 100%;
+    }
+    .slideImage{
+        width: 75%;
+        height: 50%;
+        margin-bottom: 10px;
+    }
+    .slideInfo{
+        width: 80%;
+        height: 40%;
+        margin-bottom: 5%;
+    }
+/* --------------------------------THIRD SECTION - ABOUT ME-------------------------------- */
+    .thirdSection{
+        margin-top: 20px;
+        height: max-content;
+    }
+    .thirdSectionContainer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+    .thirdSectionContainerInfo{
+        width:100%;
+        margin-top: 0;
+    }
+    .thirdSectionContainerInfo h3{
+        text-align: center;
+    }
+    .thirdSectionContainerInfo p{
+        text-align: justify;
+        margin-bottom: 30px;
+        font-size: 20px;
+
+    }
+    .thirdSectionContainerImg{
+        width: 100%;
+        height: 30%;
+        margin-bottom: 0;
+    }
+    .thirdSectionContainerImg div img{
+        object-fit: contain;
+        width: 60%;
+        height: 100%;
+    }
+
+
+/* --------------------------------FOURTH SECTION - CONTACT-------------------------------- */
+    .fourthSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 50px;
+        width: 100%;
+        height: max-content;
+    }
+    .fourthSectionSt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .fourthSectionSt h3{
+        font-size: 25px;
+    }
+    .emoji{
+        font-size: 25px;
+    }
+    .fourthSectionSt p {
+        font-size: 16px;
+    }
+    .fourthSectionSt h4{
+        font-size: 19px;
+    }
+    .fourthSectionNd{
+        margin-top: 30px;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: max-content;
+        margin-bottom: 30px;
+    }
+    .navBarBottom{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .navBarBottomList{
+        justify-content: space-evenly;
+    }
+    .bottomTitle{
+        margin-right: 20px;
+        margin-bottom: 15px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .socialsBottom{
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .socialsBottomContainer{
+        width: 100%;
+        margin-right: 0px;
+    }
 }

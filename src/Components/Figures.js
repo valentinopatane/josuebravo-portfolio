@@ -18,7 +18,7 @@ const Box = ({position, color, args})=>{
 function Figures(){
 
     return(
-        <Canvas camera={{position: [-5, 2,10], fov:60}}>
+        <Canvas camera={{position: [-5, 2,10], fov:60}} >
             <ambientLight intensity={.4}/>
             <directionalLight
                 castShadow

@@ -16,7 +16,7 @@ function Emoji() {
     })
     return transitions(({ opacity }, item) =>
       item ? (
-        <animated.div
+        <animated.div className='emoji'
           style={{
             position: 'absolute',
             opacity: opacity.to({ range: [0.0, 1.0], output: [0, 1] }),
@@ -24,7 +24,7 @@ function Emoji() {
           😄
         </animated.div>
       ) : (
-        <animated.div
+        <animated.div className='emoji'
           style={{
             position: 'absolute',
             opacity: opacity.to({ range: [1.0, 0.0], output: [1, 0] }),

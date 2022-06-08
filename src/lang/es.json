@@ -1,0 +1,20 @@
+{
+    "nav.project": "Proyectos",
+    "nav.about":"Acerca de",
+    "nav.contact":"Contacto",
+    "nav.home":"Inicio",
+
+    "first.greet": "Hola, Soy",
+    "first.description": "Me gusta diseñar productos, {br} experiencias de interfaces increíbles.",
+
+    "first.download": "Descargar CV",
+
+    "nd.title": "Mis Projectos",
+    "nd.see": "Ver más",
+
+    "third.info": "Senior UX/UI  designer, desarrollando experiencias e interfaces para TV, web y app. Especializado en el desarrollo de productos y experiencias con estrategia de marca visual y comercial, User - Centered Design, Design Thinking, Prototipado y Research.",
+    
+    "fourth.title": "Trabajemos juntos!",
+    "fourth.sub": "Llevemos tu proyecto al {br} siguiente nivel."
+
+}

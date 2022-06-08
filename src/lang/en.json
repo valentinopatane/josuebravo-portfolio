@@ -1,0 +1,20 @@
+{
+    "nav.project": "Projects",
+    "nav.about":"About me",
+    "nav.contact":"Contact",
+    "nav.home":"Home",
+
+    "first.greet": "Hi, I'm",
+    "first.description": "I like to design incredible products, {br} experiences and interfaces.",
+
+    "first.download": "Download CV",
+
+    "nd.title": "My Projects",
+    "nd.see": "See more",
+
+    "third.info": "Senior UX/UI Designer currently developing experiences and interfaces for TV, Web and App. Due to my background is Industrial Design, I am specialized in product and experiences development focusing on Visual and Commercial Brand Strategy, User-Centered Design, Design Thinking, Prototyping, Testing and Research.",
+    
+    "fourth.title": "Let's work together!",
+    "fourth.sub": "Let me take your project {br} to the next level."
+
+}

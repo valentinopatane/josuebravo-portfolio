@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import cardsData from './Cards.js'
-import { Animator,MoveIn,FadeIn} from "react-scroll-motion";
+import { FormattedMessage } from 'react-intl'
+
 
 
 function Slider() {
@@ -14,35 +15,35 @@ function Slider() {
     return (
         <>
             <section className='secondSection' id='trabajos'>   
-                <Animator animation={FadeIn()}>
-                    <h3>Mis proyectos</h3>
-                </Animator>
+
+                <h3><FormattedMessage id="nd.title" defaultMessage="My projects"/></h3>
+
                 
                 <div className="containerSlider">
                     {cardsData.map((card, index)=>{
                     return(
                         <div key={card.id} className={slideIndex === index + 1 ? "slide slideActive" : "slide"}>
-                            <Animator animation={MoveIn(-1000,0)}>
+
                                 {/* IMAGEN DE CADA PROYECTO */}
                                 <div className='slideImage'>
                                     <img src={card.img} alt="proyecto"/>
                                 </div>
-                            </Animator>
-                            <Animator animation={MoveIn(1000,0)}>
+
+
                                 {/* INFO DE CADA PROYECTO */}
                                 <div className='slideInfo'>
                                     <h5>{card.title}</h5>
                                     <p>{card.subTitle}</p>
-                                    <a href='#'>Ver más</a>
+                                    <a href={card.url} target="_blank" rel="noreferrer"><FormattedMessage id="nd.see" defaultMessage="See more"/></a>
                                 </div>
-                            </Animator>
+
                         </div>
                         )
                     })}
                     {/* BOTONES DE NAVEGACION - SLIDER */}
                     <div className="container-dots">
                         {Array.from({length: cardsData.length}).map((item, index) => (
-                            <div 
+                            <div key={index}
                             onClick={() => moveDot(index + 1)}
                             className={slideIndex === index + 1 ? "dot active" : "dot"}
                             ></div>
