@@ -48,7 +48,7 @@ function NavBar(){
                         <a href='#contacto' className='navBarListButton' onClick={switchMove}><FormattedMessage id="nav.contact" defaultMessage="Contact"/></a>
                     </li>
                     <li className='navBarListItem'>
-                        <div style={{marginRight: '5px'}} onClick={()=>language.settingLang('en')}>
+                        <div style={{marginRight: '5px', cursor:'pointer'}} onClick={()=>language.settingLang('en')}>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clipPath="url(#clip0_136_173)">
 <path d="M0 6.03933V8.66666H3.752L0 6.03933ZM3.10933 20.6667H8.66667V16.7753L3.10933 20.6667ZM15.3333 16.776V20.6667H20.89L15.3333 16.776ZM0 15.3333V17.9607L3.75333 15.3333H0ZM20.8913 3.33333H15.3333V7.22466L20.8913 3.33333ZM24 17.9613V15.3333H20.246L24 17.9613ZM24 8.66666V6.03933L20.2473 8.66666H24ZM8.66667 3.33333H3.10933L8.66667 7.22466V3.33333Z" fill="#00247D"/>
@@ -64,7 +64,7 @@ function NavBar(){
 </svg>
                         </div>
                         /
-                        <div style={{marginLeft: '5px'}} onClick={()=>language.settingLang('sp')}>
+                        <div style={{marginLeft: '5px', cursor:'pointer'}} onClick={()=>language.settingLang('sp')}>
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clipPath="url(#clip0_136_162)">
 <path d="M24 18C24 18.7072 23.719 19.3855 23.219 19.8856C22.7189 20.3857 22.0406 20.6667 21.3333 20.6667H2.66667C1.95942 20.6667 1.28115 20.3857 0.781049 19.8856C0.280952 19.3855 0 18.7072 0 18V5.99999C0 5.29275 0.280952 4.61447 0.781049 4.11438C1.28115 3.61428 1.95942 3.33333 2.66667 3.33333H21.3333C22.0406 3.33333 22.7189 3.61428 23.219 4.11438C23.719 4.61447 24 5.29275 24 5.99999V18Z" fill="#C60A1D"/>

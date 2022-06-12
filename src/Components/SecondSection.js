@@ -1,7 +1,6 @@
-import React, {useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import cardsData from './Cards.js'
 import { FormattedMessage } from 'react-intl'
-
 
 
 function Slider() {
@@ -12,11 +11,31 @@ function Slider() {
         setSlideIndex(index)
     }
 
+    const secondSec = useRef()
+
+    const [beenScrolled, setBeenScrolled] = useState(false)
+    
+    useEffect(()=>{
+        const viewScroll = ()=>{
+            const div = secondSec.current
+            const { y } = div.getBoundingClientRect(); 
+
+            if( y <= 220 ){
+                setBeenScrolled(true)
+            }
+        }
+        window.addEventListener('scroll', viewScroll)
+        return ()=>{
+            window.removeEventListener('scroll', viewScroll)
+        }
+    },[])
+
+
     return (
         <>
-            <section className='secondSection' id='trabajos'>   
+            <section  ref={secondSec} className='secondSection' id='trabajos'>   
 
-                <h3><FormattedMessage id="nd.title" defaultMessage="My projects"/></h3>
+                <h3 className={beenScrolled === true ? 'secondTitleActive secondSectionTitle' : 'secondSectionTitle'}><FormattedMessage id="nd.title" defaultMessage="My projects"/></h3>
 
                 
                 <div className="containerSlider">
@@ -25,16 +44,15 @@ function Slider() {
                         <div key={card.id} className={slideIndex === index + 1 ? "slide slideActive" : "slide"}>
 
                                 {/* IMAGEN DE CADA PROYECTO */}
-                                <div className='slideImage'>
+                                <div className={beenScrolled === true ? "slideImage imageScroll" : "slideImage"}>
                                     <img src={card.img} alt="proyecto"/>
                                 </div>
 
-
                                 {/* INFO DE CADA PROYECTO */}
-                                <div className='slideInfo'>
+                                <div key={card.url} className={beenScrolled === true ? "slideInfo infoScroll" : "slideInfo"}>
                                     <h5>{card.title}</h5>
                                     <p>{card.subTitle}</p>
-                                    <a href={card.url} target="_blank" rel="noreferrer"><FormattedMessage id="nd.see" defaultMessage="See more"/></a>
+                                    <a href={card.url} target="_blank" rel="noreferrer" className='slideInfoLink'><FormattedMessage id="nd.see" defaultMessage="See more"/></a>
                                 </div>
 
                         </div>

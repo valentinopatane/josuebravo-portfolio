@@ -32,10 +32,10 @@ function FirstSection() {
                 
                 <animated.div className='firstSectionInfo'style={propsMain}>
                         <h1><FormattedMessage id="first.greet" defaultMessage="Hi, I'm"/><span style={{color:'#201992', marginLeft:'12px'}}>Jos</span>!</h1>  
-                        <h2><FormattedMessage id="first.description" values={{br: <br />}}/></h2>
+                        <h2><FormattedMessage id="first.description" defaultMessage="I like to design incredible products, {br} experiences and interfaces." values={{br: <br />}}/></h2>
                         <animated.div className='firstSectionButtons' style={propsSecondary}>
                             <img src={josue} alt='josue'/>
-                            <a id='firstSectionContact'  className='firstSectionInfoButton' href='#'><FormattedMessage id="nav.contact" defaultMessage="Contact"/> <svg style={{marginLeft: '7px'}}width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a id='firstSectionContact'  className='firstSectionInfoButton' href= "mailto: josuebravodi@gmail.com"><FormattedMessage id="nav.contact" defaultMessage="Contact"/> <svg style={{marginLeft: '7px'}}width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.5 4.75H22.5V19.75H1.5V4.75Z" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M22.1609 5.29999L14.0169 11.564C13.4386 12.0088 12.7295 12.25 11.9999 12.25C11.2703 12.25 10.5611 12.0088 9.98286 11.564L1.83887 5.29999" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>

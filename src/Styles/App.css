@@ -130,8 +130,9 @@ main{
     height: 101vh;
     background-color: #200392;
     position: relative;
+    overflow: hidden;
 }
-.secondSection h3{
+.secondSectionTitle{
     text-align: center;
     margin-top: 70px;
     font-family: 'Poppins';
@@ -140,6 +141,11 @@ main{
     font-size: 40px;
     line-height: 78px;
     color: #F4F6F6;
+    opacity: 0;
+}
+.secondTitleActive{
+    transition: opacity 0.5s ease-in;
+    opacity: 1;
 }
 .containerSlider {
     display: flex;
@@ -166,7 +172,12 @@ main{
     height: 100%;
     margin-bottom: 50px;
     border-radius: 5%;
-
+    transform: translateX(-2000px);
+    transition: transform 1s ease-out;
+}
+.imageScroll{
+    transform: translateX(0%);
+    transition: transform 1s ease-in;
 }
 .slide img {
     width: 100%;
@@ -184,6 +195,12 @@ main{
     justify-content: center;
     flex-direction: column;
     color: #fff;
+    transform: translateX(2000px);
+    transition: transform 1s ease-out;
+}
+.infoScroll{
+    transform: translateX(0%);
+    transition: transform 1 ease-in;
 }
 .slideInfo h5{
     font-family: 'Poppins';
@@ -204,12 +221,18 @@ main{
     color: #F4F6F6;
     margin-bottom: 40px;
 }
-.slideInfo a{
+.slideInfoLink{
     text-decoration: none;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.671);
+    transition: transform 0.2s ease-in;
+}
+.slideInfoLink:hover{
+    transition: transform 0.2s ease-out;
+    transform: scale(1.1);
 }
 .slideActive {
+    z-index: 1000;
     opacity: 1;
 }
 .container-dots {
@@ -257,6 +280,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
 }
 .thirdSectionContainerImg div{
     display: flex;
@@ -272,6 +296,7 @@ main{
 }
 .thirdSectionContainerInfo{
     width: 45%;
+    opacity: 0;
 }
 .thirdSectionContainerInfo h3{
     color: #000000;
@@ -290,7 +315,14 @@ main{
     line-height: 40px;
     margin-bottom: 100px;
 }
-
+.thirdShowImg{
+    transition: opacity 0.5s ease-in;
+    opacity: 1;
+}
+.thirdShowInfo{
+    transition: opacity 1s ease-in;
+    opacity: 1;
+}
 /* --------------------------------FOURTH SECTION - CONTACT-------------------------------- */
 .fourthSection{
     width: 100%;
