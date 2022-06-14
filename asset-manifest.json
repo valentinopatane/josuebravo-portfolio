@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/josuebravo-portfolio/static/css/main.7e4121fe.css",
-    "main.js": "/josuebravo-portfolio/static/js/main.ef1a0e57.js",
+    "main.css": "/josuebravo-portfolio/static/css/main.a97d2cd8.css",
+    "main.js": "/josuebravo-portfolio/static/js/main.8cbbed81.js",
     "static/media/Layer 0.png": "/josuebravo-portfolio/static/media/Layer 0.09da9d31c749677b7abf.png",
     "static/media/african.jpg": "/josuebravo-portfolio/static/media/african.dec1d6d09a8e83f1fa2b.jpg",
     "static/media/great.jpg": "/josuebravo-portfolio/static/media/great.6f32c2bc360971af6928.jpg",
     "static/media/dulce.jpg": "/josuebravo-portfolio/static/media/dulce.035b4657924c84d75153.jpg",
     "static/media/roomian.jpg": "/josuebravo-portfolio/static/media/roomian.8c5220521553c991b8bf.jpg",
     "index.html": "/josuebravo-portfolio/index.html",
-    "main.7e4121fe.css.map": "/josuebravo-portfolio/static/css/main.7e4121fe.css.map",
-    "main.ef1a0e57.js.map": "/josuebravo-portfolio/static/js/main.ef1a0e57.js.map"
+    "main.a97d2cd8.css.map": "/josuebravo-portfolio/static/css/main.a97d2cd8.css.map",
+    "main.8cbbed81.js.map": "/josuebravo-portfolio/static/js/main.8cbbed81.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e4121fe.css",
-    "static/js/main.ef1a0e57.js"
+    "static/css/main.a97d2cd8.css",
+    "static/js/main.8cbbed81.js"
   ]
 }
