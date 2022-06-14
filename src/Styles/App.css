@@ -237,7 +237,6 @@ main{
 }
 .container-dots {
     margin-top: 10px;
-    background-color: red;
     position: absolute;
     display: flex;
     bottom: 5%;
